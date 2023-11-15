@@ -1,0 +1,62 @@
+.sidebar-container {
+
+
+
+    height: 95vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.304);
+    flex-basis: 33%;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    &__heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+    }
+
+    &__imgs {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+.sidebar__search {
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.096);
+    border-radius: 50px;
+    width: 100%;
+    padding: 0 0.5rem;
+    height: 36px;
+
+    &-input {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+
+}
+
+.sidebar__btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}

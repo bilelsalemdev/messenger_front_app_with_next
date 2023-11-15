@@ -1,0 +1,41 @@
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 0.9rem;
+
+
+}
+
+.navbar {
+
+    &-left {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 1rem;
+
+        &__search {
+            display: flex;
+            align-items: center;
+            background: rgba(128, 128, 128, 0.096);
+            border-radius: 50px;
+            width: 100%;
+            padding: 0 0.5rem;
+
+            &-input {
+                border: none;
+                background: transparent;
+                outline: none;
+                width: 100%;
+                padding: 0.3rem;
+            }
+
+        }
+    }
+
+    &-center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
