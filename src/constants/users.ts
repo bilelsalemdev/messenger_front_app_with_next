@@ -5,7 +5,7 @@ export const USERS = [
         id: 1,
         name: 'John Doe',
         avatar: userAvatar,
-
+        email: ''
 
 
     }
