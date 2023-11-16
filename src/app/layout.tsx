@@ -3,7 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/layouts/Navbar/Navbar'
 import Sidebar from '@/layouts/Sidebar/Sidebar'
-
+import { store } from '@/data/store'
+import { Provider } from 'react-redux'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,16 +18,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} w-full h-screen overflow-hidden`} >
-        <Navbar />
-        <section className='flex w-full' >
-          <Sidebar />
-          <section className='w-full' >
-            {children}
+    <Provider store={store}>
+      <html lang="en">
+        <body className={`${inter.className} w-full h-screen overflow-hidden`} >
+          <Navbar />
+          <section className='flex w-full' >
+            <Sidebar />
+            <section className='w-full' >
+              {children}
+            </section>
           </section>
-        </section>
-      </body>
-    </html>
+        </body>
+      </html>
+    </Provider>
   )
 }
