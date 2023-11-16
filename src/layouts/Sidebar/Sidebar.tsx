@@ -7,6 +7,7 @@ import moreIcon from '@icons/moreIcon.svg'
 import styles from './sidebar.module.scss'
 import SearchIcon from '@/components/svgComponents/SearchIcon'
 import Button from '@/components/Button/Button'
+import UsersContainer from '@/features/Messages/UsersContainer/UsersContainer'
 const Sidebar = () => {
     const [active, setActive] = React.useState(0)
     return (
@@ -37,6 +38,10 @@ const Sidebar = () => {
                         color: active === 1 ? '#1877F2' : '#65676B'
                     }} />
             </div>
+
+            <article className='w-full h-[70vh] overflow-y-hidden' >
+                <UsersContainer />
+            </article>
 
         </section>
     )

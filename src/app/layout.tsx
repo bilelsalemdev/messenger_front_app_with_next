@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full h-screen`} >
+      <body className={`${inter.className} w-full h-screen overflow-hidden`} >
         <Navbar />
         <section className='flex w-full' >
           <Sidebar />
