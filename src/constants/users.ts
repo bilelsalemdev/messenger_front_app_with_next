@@ -27,7 +27,7 @@ export const USERS = [
     },
     {
         id: 4,
-        name: 'John Doe',
+        name: 'Bilel Salem',
         avatar: userAvatar,
         email: ''
 
@@ -35,7 +35,7 @@ export const USERS = [
     },
     {
         id: 5,
-        name: 'John Doe',
+        name: 'Salem Salem',
         avatar: userAvatar,
         email: ''
 
@@ -75,7 +75,7 @@ export const USERS = [
     },
     {
         id: 10,
-        name: 'John Doe',
+        name: 'Bilel Salem',
         avatar: userAvatar,
         email: ''
 
@@ -83,7 +83,7 @@ export const USERS = [
     },
     {
         id: 11,
-        name: 'John Doe',
+        name: 'Salem Salem',
         avatar: userAvatar,
         email: ''
 
