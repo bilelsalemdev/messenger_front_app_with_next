@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import cameraIcon from '@icons/cameraIcon.svg'
 import editIcon from '@icons/editIcon.svg'
 import moreIcon from '@icons/moreIcon.svg'
@@ -10,6 +10,9 @@ import Button from '@/components/Button/Button'
 import UsersContainer from '@/features/Messages/UsersContainer/UsersContainer'
 const Sidebar = () => {
     const [active, setActive] = React.useState(0)
+
+
+
     return (
         <section className={styles['sidebar-container']} >
             <div className={styles['sidebar-header']} >
